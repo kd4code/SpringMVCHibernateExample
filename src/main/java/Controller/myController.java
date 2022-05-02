@@ -2,9 +2,7 @@ package Controller;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -56,7 +54,7 @@ public class myController {
 		return new ModelAndView("redirect:/thankyou");
     } 	
    
-   @RequestMapping(value = "/getResult", method = RequestMethod.POST)
+   @RequestMapping(value = "/getResult", method = RequestMethod.GET)
 	public ModelAndView getResult(@RequestParam int roll) {
 		ModelAndView model=new ModelAndView();
 		Result r=ms.getResult(roll);
