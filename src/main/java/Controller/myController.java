@@ -1,6 +1,7 @@
 package Controller;
 
 import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,6 +17,8 @@ import org.springframework.web.servlet.ModelAndView;
 
 import Entity.Result;
 import Service.myService;
+
+//All the APIs are here, all entries at single place, call from UI.
 
 @Controller
 public class myController {
