@@ -17,6 +17,8 @@ import org.springframework.web.servlet.ModelAndView;
 import Entity.Result;
 import Service.myService;
 
+// all the entry resources in one controller class 
+
 @Controller
 public class myController {
   @Autowired	
@@ -26,7 +28,7 @@ public class myController {
 	super();
   }
 
-
+ 
   @RequestMapping(value = "/thankyou")
 	public ModelAndView thankyou(ModelAndView model) throws IOException {
 	   ModelAndView mv=new ModelAndView();
